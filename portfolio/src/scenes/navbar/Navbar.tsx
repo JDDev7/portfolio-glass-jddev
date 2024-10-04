@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Link from '../../components/Link'
-import { SelectedPage } from '../../shared/types'
-import useMediaQuery from '../../hooks/useMediaQuery'
+import Link from '@/components/Link'
+import { SelectedPage } from '@/shared/types'
+import useMediaQuery from '@/hooks/useMediaQuery'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 type Props = {
     isTopOfPage: boolean;
@@ -12,7 +12,6 @@ type Props = {
   const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const isAboveSmallScreens = useMediaQuery("(min-width: 480px)");
-  
   return (
     <nav>
       {/* navbar menu */}
@@ -25,9 +24,10 @@ type Props = {
           </div>  
         ) : (
           <button
-            className="navbar-toggle"
-            onClick={() => setIsMenuToggled(!isMenuToggled)}
-          >
+          className="navbar-toggle"
+          style={{ display: isMenuToggled ? 'none' : 'block' }}
+          onClick={() => setIsMenuToggled(!isMenuToggled)}
+        >
             <Bars3Icon className='mobile-menu-icon'></Bars3Icon>
           </button>
         )}
