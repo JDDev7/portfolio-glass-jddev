@@ -13,6 +13,7 @@ export const webLinks = {
     yellowJackWeb : 'https://yellowjack-jddev.netlify.app',
     yellowJackCalc : 'https://calculadora-yellow-jddev.netlify.app',
     prevPortfolio : 'https://jddev-portfolio.netlify.app',
+    linkedIn : "https://www.linkedin.com/in/jdmorenopulido/"
 };
 
 
@@ -27,4 +28,5 @@ export const descriptions = {
 
     diceAppDesc : "Aplicación creada en Flutter para dispositivos Android. La aplicación permite tirar un dado de seis caras de forma aleatoria. Si necesitas jugartela a suertes en alguna situación con tus amigos, esta aplicación te vendrá como anillo al dedo."
 
-}
+};
+
