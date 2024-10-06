@@ -71,22 +71,33 @@ const Home = ({ setSelectedPage }: Props) => {
                     alt="Avatar profile picture"
                   />
                 }
-              </div>
-              <div className="presentation-text-container">
-                <h1>¡Hola! Soy José Diego</h1>
-                <p>
-                  Desarrollador Web y mobile Jr. de Cáceres, Extremadura
-                  enfocado al Frontend, principalmente con React y TypeScript.
-                </p>
-              </div>
-              <div className="social-buttons">
-                <button className="social-button">
+                <div className="social-buttons">
+                <button className="social-button" onClick={() => window.open(githubLinks.gitHub, "_blank", "noopener noreferrer")}>
                   <img src={githubIcon} alt="Github" />
                 </button>
-                <button className="social-button">
+                <button className="social-button" onClick={() => window.open(webLinks.linkedIn, "_blank", "noopener noreferrer")}>
                   <img src={linkedInIcon} alt="LinkedIn" />
                 </button>
               </div>
+              </div>
+              <div className="presentation-text-container">
+                <div className="presentation-text-header">
+                <h1>¡Hola! Soy José Diego</h1><span>👋</span>
+                </div>
+                <div className="presentation-text-paragraph">
+                <p className="paragraph-one">
+                  Desarrollador Web y mobile Jr. de Cáceres, Extremadura
+                  enfocado al Frontend, principalmente con React y TypeScript.                  
+                </p>
+                <p className="paragraph-two">Me encanta empaparme de nuevas tecnologías y estar siempre aprendiendo cosas nuevas dentro y fuera del mundo de la programación.</p>
+                <p className="paragraph-three">Aquí podrás ver mis proyectos, descargar mi CV o contactar conmigo. ¡Trabajemos juntos!</p>
+                </div>
+                <div className="cta-btn-container">
+                  <button className="cta-contact-btn">Contactar</button>
+                  <button className="cta-contact-btn">Descargar CV</button>
+                </div>
+              </div>
+
             </div>
           </div>
           <div className="techs glass">
