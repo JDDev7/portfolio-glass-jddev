@@ -365,6 +365,7 @@ body {
 .cv-modal-buttons {
   display: flex;
   gap: 1rem;
+  
 }
 
 .cv-modal-buttons button {
