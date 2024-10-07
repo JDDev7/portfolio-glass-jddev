@@ -3,7 +3,8 @@ import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Modal from "@/components/Modal";
-import { githubLinks, webLinks, descriptions } from "@/shared/constants";
+import CvModal from "@/components/CvModal";
+import { githubLinks, webLinks, descriptions} from "@/shared/constants";
 import {
   avatarBig,
   avatarSmall,
@@ -35,6 +36,16 @@ type Props = {
 const Home = ({ setSelectedPage }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const [isCvModalOpen, setIsCvModalOpen] = useState(false);
+
+  const openCvModal = () => {
+    setIsCvModalOpen(true);
+  };
+
+  const closeCvModal = () => {
+    setIsCvModalOpen(false);
+  };
+
   const [modalContent, setModalContent] = useState({
     title: "",
     description: "",
@@ -53,6 +64,8 @@ const Home = ({ setSelectedPage }: Props) => {
   };
 
   const closeModal = () => setIsModalOpen(false);
+
+
 
   const isAboveSmallScreens = useMediaQuery("(min-width: 480px)");
   return (
@@ -94,7 +107,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 </div>
                 <div className="cta-btn-container">
                   <button className="cta-contact-btn">Contactar</button>
-                  <button className="cta-contact-btn">Descargar CV</button>
+                  <button className="cta-contact-btn" onClick={openCvModal}>Descargar CV</button>
                 </div>
               </div>
 
@@ -204,6 +217,10 @@ const Home = ({ setSelectedPage }: Props) => {
           image={modalContent.image}
           techImages={modalContent.techImages}
         />
+
+        <CvModal isOpen={isCvModalOpen} closeCvModal={closeCvModal}>
+
+        </CvModal>
       </motion.div>
     </section>
   );

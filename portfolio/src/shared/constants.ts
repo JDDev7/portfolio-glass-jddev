@@ -30,3 +30,6 @@ export const descriptions = {
 
 };
 
+
+export const spCvUrl = "../assets/CV_Jose_Diego_Moreno_2024[Spanish].pdf";
+export const enCvUrl = "../assets/CV_Jose_Diego_Moreno_2024[English].pdf";
