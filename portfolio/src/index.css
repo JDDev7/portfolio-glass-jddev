@@ -334,7 +334,7 @@ body {
 }
 
 /* Estilo para el contenido del modal */
-.modal-content {
+.modal-content, .cv-modal-content {
   padding: 1rem;
   border-radius: 1rem;
   max-width: 40rem;
@@ -349,6 +349,40 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.257);
   animation: fadeIn 0.3s;
 }
+
+.cv-modal-content .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+.cv-modal-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.cv-modal-buttons button {
+  width: 100%;
+  max-width: fit-content;
+  border-radius: 1.5rem;
+  border: none;
+  background-color: #c39d03;
+  color: white;
+  padding: 0.2rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-abel);
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(42, 42, 42, 0.5);
+}
+
+
 
 .modal-content .content {
   display: flex;
