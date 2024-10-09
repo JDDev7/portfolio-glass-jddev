@@ -49,7 +49,7 @@
 
 body {
   font-family: var(--font-abel);
-  background-color: var(--website-bg);
+  background: var(--website-bg);
 }
 
 .glass {
@@ -79,7 +79,7 @@ body {
   border-radius: 3rem;
   margin: 1rem 0;
   padding: 0.5rem 1rem;
-  z-index: 10;
+  z-index: 9999;
 }
 
 .link {
@@ -100,12 +100,16 @@ body {
 
 .navbar-toggle {
   display: block;
+  position: fixed;
+  top: 0.5rem;
+  right: 1rem;
   width: 3rem;
   height: 3rem;
   padding: 0.5rem;
   background-color: var(--navbar-background-color);
   border-radius: 3rem;
   cursor: pointer;
+  z-index: 10;
 }
 
 .mobile-menu-icon {
@@ -121,7 +125,6 @@ body {
   z-index: 40;
   height: 100%;
   width: 320px;
-  background-color: var(--glass-style-bg);
   border: 1px solid;
   transition: 0.3s ease-in-out;
 }
@@ -162,7 +165,7 @@ body {
   width: 100%;
   height: fit-content;
   padding-bottom: 5rem;
-  background: var(--website-bg);
+
 }
 
 .home-glass-parent {
@@ -171,7 +174,7 @@ body {
   grid-template-rows: repeat(4, 1fr);
   gap: 8px;
   padding-top: 4.5rem;
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -318,7 +321,7 @@ body {
   color: white;
 }
 
-/* Estilo para el fondo del modal */
+/* Modal */
 
 .modal {
   display: flex;
@@ -423,10 +426,11 @@ body {
 /* Grid proyectos */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr)); /* Asegura un buen diseño adaptable */
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-template-rows: repeat(2, minmax(250px, 1fr));
   gap: 0.2rem;
   padding: 0.5rem;
+  margin: 0 auto;
 }
 
 
@@ -541,6 +545,128 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.257);
 }
 
+/* Experiencia */
+
+.experience-glass-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 0.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.experience-content .experience-title h1, .education-content .education-title h1 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  padding-top: 0.2rem;
+}
+
+
+.experience, .education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
+.experience-education-job-vertical-container {
+  width: 100%;
+}
+
+.experience-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.experience-education-job-title h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.experience-education-job-date h3 {
+  color: rgb(224, 224, 224);
+  font-size: 1.5
+}
+
+.experience-education-center h4 {
+  color: rgb(224, 224, 224);
+  font-size: 1.25
+}
+
+.experience-education-job-description p, .experience-education-description p {
+  color: rgb(224, 224, 224);
+  font-size: 1rem;
+}
+
+.experience-education-job-description {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  gap: 0.2rem;
+  padding: 0.2rem;
+}
+
+
+
+.experience-education-job-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.experience-education-job-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 0.3rem;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.education-title-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.experience-education-job-icon {
+  width: 32px;
+  height: 32px;
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+  background: var(--glass-style-bg);
+  border-radius: 50%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.257);
+  color: white;
+}
+
 
 
 /* Mobile (small screen) responsive styles */
@@ -641,6 +767,44 @@ body {
   .presentation-text-header span {
     font-size: 2rem;
   }
+
+  .experience-glass-parent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .experience-education-job-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    text-align: center;
+  }
+
+  .experience-education-job-vertical-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-education-job-vertical-container .experience-education-job-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+
+  .experience-education-job-description p{
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 834px) {
@@ -679,6 +843,17 @@ body {
   
   .project-card-open-modal-button button {
     font-size: 1rem;
+  }
+
+  .experience-glass-parent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .experience-education-job-description p {
+    font-size: 1.2rem;
   }
 }
 
@@ -722,5 +897,11 @@ body {
 
   .techs-row img{
     width: 2.5rem;    
+  }
+
+  .experience-glass-parent {
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }

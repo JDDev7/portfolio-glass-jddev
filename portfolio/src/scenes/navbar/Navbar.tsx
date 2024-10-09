@@ -19,7 +19,7 @@ type Props = {
         {isAboveSmallScreens ? (
           <div className='links-container'>
             <Link page='Inicio' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
-            <Link page='Proyectos' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
+            <Link page='Experiencia' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
             <Link page='Contacto' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
           </div>  
         ) : (
@@ -35,7 +35,7 @@ type Props = {
         </div>
         {/* mobile menu */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className='mobile-menu-container'>
+          <div className='mobile-menu-container glass'>
             {/* Close Icon */}
             <div className='close-icon-container'>
             <button
@@ -47,7 +47,7 @@ type Props = {
             </div>
             <div className="mobile-menu-items">
               <Link page='Inicio' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
-              <Link page='Proyectos' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
+              <Link page='Experiencia' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
               <Link page='Contacto' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
             </div>
 

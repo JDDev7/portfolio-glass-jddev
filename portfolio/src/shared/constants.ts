@@ -33,3 +33,14 @@ export const descriptions = {
 
 export const spCvUrl = "../assets/CV_Jose_Diego_Moreno_2024[Spanish].pdf";
 export const enCvUrl = "../assets/CV_Jose_Diego_Moreno_2024[English].pdf";
+
+
+// job texts
+
+export const jobDescriptions = {
+    pcBox : "Realicé las prácticas en PCBox, donde tras un curso de reparacion de sistemas microinformáticos, aprendí y ayudé a reparar equipos de clientes. También realicé venta al público como dependiente de la tienda.",
+
+    panoramaweb : "Tras el curso de confección y desarrollo web, entré en PANORAMAWEB a realizar las prácticas de empresa, donde ayudé en el desarrollo de webs de clientes con Wordpress, gestioné una tienda con WooCommerce y realizé labores de Community Manager. Al acabar, recibí una carta de recomendación por parte del CEO de la empresa.",
+
+    freelance : "Actualmente me encuentro como desarrollador freelance, disponible para un trabajo a jornada completa. ¡Contacta conmigo!"
+}
