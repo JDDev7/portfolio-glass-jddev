@@ -7,13 +7,14 @@ type Props = {
     isTopOfPage: boolean;
     selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void;
+    className?: string;
   };
   
-  const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
+  const Navbar = ({ selectedPage, setSelectedPage, className }: Props) => {
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-    const isAboveSmallScreens = useMediaQuery("(min-width: 480px)");
+    const isAboveSmallScreens = useMediaQuery("(min-width: 1024px)");
   return (
-    <nav>
+    <nav className={className}>
       {/* navbar menu */}
       <div className="nav-content">
         {isAboveSmallScreens ? (
