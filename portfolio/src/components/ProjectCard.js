@@ -1,0 +1,6 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { githubIcon, siteLink } from '@/shared/assets';
+const ProjectCard = (props) => {
+    return (_jsxs("div", { className: 'project-card', children: [_jsx("div", { className: 'project-card-image', children: _jsx("img", { src: props.image, alt: props.title }) }), _jsx("div", { className: "project-card-text-container", children: _jsx("h3", { children: props.title }) }), _jsx("div", { className: "techs-and-links-container", children: _jsx("div", { className: "project-card-techs", children: props.techImages?.map((image, index) => (_jsx("img", { src: image, alt: `Tech ${index}` }, index))) }) }), _jsxs("div", { className: "project-bottom", children: [_jsxs("div", { className: "project-links", children: [props.github && _jsx("a", { href: props.github, target: "_blank", rel: "noopener noreferrer", children: _jsx("img", { src: githubIcon, alt: "" }) }), props.directLink && _jsx("a", { href: props.directLink, target: "_blank", rel: "noopener noreferrer", children: _jsx("img", { src: siteLink, alt: "" }) })] }), _jsx("div", { className: "project-card-open-modal-button", children: _jsx("button", { onClick: props.openModal, children: "M\u00E1s info" }) })] })] }));
+};
+export default ProjectCard;
