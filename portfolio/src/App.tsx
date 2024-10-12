@@ -5,6 +5,7 @@ import Home from "./scenes/home/index";
 import Experience from "./scenes/experience";
 import BackToTopButton from "./components/goBackToTop";
 import Contact from "./scenes/contact";
+import Footer from "./scenes/footer";
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage}></Home>
       <Experience setSelectedPage={setSelectedPage}></Experience>
       <Contact setSelectedPage={setSelectedPage}></Contact>
+      <Footer></Footer>
       <BackToTopButton></BackToTopButton>    
     </>
   )
