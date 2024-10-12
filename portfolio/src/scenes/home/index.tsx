@@ -106,7 +106,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 <p className="paragraph-three">Aquí podrás ver mis proyectos, descargar mi CV o contactar conmigo. ¡Trabajemos juntos!</p>
                 </div>
                 <div className="cta-btn-container">
-                  <button className="cta-contact-btn">Contactar</button>
+                  <button className="cta-contact-btn" ><a href="#contacto">Contactar</a></button>
                   <button className="cta-contact-btn" onClick={openCvModal}>Descargar CV</button>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import { SelectedPage } from "./shared/types";
 import Home from "./scenes/home/index";
 import Experience from "./scenes/experience";
 import BackToTopButton from "./components/goBackToTop";
+import Contact from "./scenes/contact";
 
 
 
@@ -34,6 +35,7 @@ function App() {
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} className={isTopOfPage ? "" : "transparent-navbar"}/>
       <Home setSelectedPage={setSelectedPage}></Home>
       <Experience setSelectedPage={setSelectedPage}></Experience>
+      <Contact setSelectedPage={setSelectedPage}></Contact>
       <BackToTopButton></BackToTopButton>    
     </>
   )

@@ -51,7 +51,6 @@
 body {
   font-family: var(--font-abel);
   background: var(--website-bg);
-
 }
 
 .glass {
@@ -117,9 +116,9 @@ body {
   margin: 0 1rem;
 }
 
-.transparent-navbar {
+/* .transparent-navbar {
   opacity: 0;
-}
+} */
 
 .link.selected {
   color: var(--text-primary-hover);
@@ -145,7 +144,7 @@ body {
 }
 
 .mobile-menu-icon {
-  color: var(--text-primary-hover);
+  color: white;
   font-size: 1.5rem;
 }
 
@@ -159,6 +158,8 @@ body {
   width: 320px;
   border: 1px solid;
   transition: 0.3s ease-in-out;
+  opacity: 0.8;
+  background: var(--website-bg);
 }
 
 .mobile-menu-items {
@@ -277,6 +278,11 @@ body {
   font-family: var(--font-abel);
   cursor: pointer;
   box-shadow: 4px 4px 4px rgba(42, 42, 42, 0.5);
+}
+
+.cta-btn-container button a {
+  text-decoration: none;
+  color: white;
 }
 
 .cta-btn-container button:hover {
@@ -630,7 +636,7 @@ body {
 
 .experience-education-job-date h3 {
   color: rgb(224, 224, 224);
-  font-size: 1.5
+  font-size: 1rem;
 }
 
 .experience-education-center h4 {
@@ -700,7 +706,66 @@ body {
   color: white;
 }
 
+/* Contacto */
 
+.contact-glass-parent {
+  width: 100%;
+  margin-top: 4.5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 1rem;
+  width: 60%;
+  background: var(--glass-style-bg);
+  margin: 0 auto;
+}
+
+.contact-title h1 {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-buttons button {
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #c39d03;
+  color: white;
+  padding: 0.2rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-abel);
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(42, 42, 42, 0.5);
+}
+
+.contact-buttons button a {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(42, 42, 42, 0.5);
+  text-decoration: none;
+  text-align: center;
+}
 
 /* Mobile (small screen) responsive styles */
 @media (max-width: 480px) {
@@ -784,19 +849,19 @@ body {
     height: auto;
   }
 
-  /* Adjust avatar size and positioning */
+
   .presentation-card-content .avatar-container img {
-    width: 80%; /* Make the avatar smaller */
+    width: 80%; 
   }
 
-  /* Ensure buttons and text adjust */
+
   .cta-btn-container button {
-    font-size: 0.875rem; /* Slightly smaller button text */
+    font-size: 0.875rem; 
     padding: 0.5rem;
   }
 
   .presentation-text-header h1 {
-    font-size: 2rem; /* Slightly smaller for mobile */
+    font-size: 2rem;
   }
 
   .presentation-text-header span {
@@ -808,6 +873,7 @@ body {
     flex-direction: column;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    gap: 1rem;
   }
 
   .experience-content {
@@ -841,6 +907,27 @@ body {
   .experience-education-job-description p{
     font-size: 1rem;
     text-align: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 88%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .contact-content {
+    text-align: center;
+  }
+
+  .contact-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
@@ -895,6 +982,35 @@ body {
   .experience-education-job-description p {
     font-size: 1.2rem;
   }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 94%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .contact-content {
+    text-align: center;
+  }
+
+  .contact-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-content p {
+    font-size: 1.2rem;
+  }
+
+  .contact-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 834px) and (max-width: 1024px) {
@@ -914,6 +1030,35 @@ body {
 
   .project-card-open-modal-button button {
     font-size: 1.2rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 88%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .contact-content {
+    text-align: center;
+  }
+
+  .contact-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-content p {
+    font-size: 1.2rem;
+  }
+
+  .contact-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
@@ -947,5 +1092,34 @@ body {
     width: 100%;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .contact-content {
+    text-align: center;
+  }
+
+  .contact-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-content p {
+    font-size: 1.2rem;
+  }
+
+  .contact-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }

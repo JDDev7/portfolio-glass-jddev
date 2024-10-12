@@ -12,17 +12,12 @@ type Props = {
   
   const Navbar = ({ selectedPage, setSelectedPage, className }: Props) => {
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-    const isAboveSmallScreens = useMediaQuery("(min-width: 1024px)");
+    const isAboveSmallScreens = useMediaQuery("(min-width: 1440px)");
   return (
     <nav className={className}>
       {/* navbar menu */}
       <div className="nav-content">
-        {isAboveSmallScreens ? (
-          <div className='links-container'>
-            <Link page='Inicio' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
-            <Link page='Experiencia' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
-            <Link page='Contacto' selectedPage={selectedPage} setSelectedPage={setSelectedPage}></Link>
-          </div>  
+        {isAboveSmallScreens ? ("" 
         ) : (
           <button
           className="navbar-toggle"
@@ -36,7 +31,7 @@ type Props = {
         </div>
         {/* mobile menu */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className='mobile-menu-container glass'>
+          <div className='mobile-menu-container'>
             {/* Close Icon */}
             <div className='close-icon-container'>
             <button
