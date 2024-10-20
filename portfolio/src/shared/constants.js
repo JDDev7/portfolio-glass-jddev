@@ -1,7 +1,7 @@
 export const githubLinks = {
     githubYellow: 'https://github.com/JDDev7/yellowjack-react-site',
     githubCalc: 'https://github.com/JDDev7/yellowcalc',
-    githubPassGen: 'https://github.com/JDDev7/reflex_password_gen',
+    githubPassGen: 'https://github.com/JDDev7/passgen-react',
     githubMyC: 'https://github.com/JDDev7/reflex_makeyourcombo',
     githubPrevPortfolio: 'https://github.com/JDDev7/jddev_portfolio',
     githubDiceApp: 'https://github.com/JDDev7/app_dados',
