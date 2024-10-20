@@ -143,7 +143,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 directLink={webLinks.yellowJackWeb}
                 techImages={[reactIcon, typeScriptIcon, cssIcon]}
                 openModal={() =>
-                  openModal("Web YellowJack", "Web realizada en React, typescript y css3 para un bar ficticio en la que se muestran los servicios que ofrece, la carta, y un formulario de contacto totalmente funcional hecho con Basin. El diseño es completamente responsive.", yellowJackWeb, [
+                  openModal("Web YellowJack", `${descriptions.yellowJackWebDesc}`, yellowJackWeb, [
                     reactIcon,
                     typeScriptIcon,
                     cssIcon,
@@ -157,7 +157,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 directLink={webLinks.yellowJackCalc}
                 techImages={[htmlicon, javaScriptIcon, cssIcon]}
                 openModal={() =>
-                  openModal("Calculadora de Bar", "Aplicación web de una calculadora para bares, en este caso, para el bar ficticio Yellow Jack. Fué un proyecto personal debido a que, en un juego de rol, usabamos el sistema de google sheets, que hacia lento el proceso de calcular los precios. De esta forma, la web a parte de cargar más rapido, era mas sencilla de usar y totalmente responsive", calculadoraBar, [
+                  openModal("Calculadora de Bar", `${descriptions.yellowjackCalcDesc}`, calculadoraBar, [
                     htmlicon,
                     javaScriptIcon,
                     cssIcon,
@@ -168,9 +168,10 @@ const Home = ({ setSelectedPage }: Props) => {
                 image={passGen}
                 title="Generador Contraseñas"
                 github={githubLinks.githubPassGen}
-                techImages={[pythonIcon, reflexIcon, cssIcon]}
+                directLink={webLinks.passGenWeb}
+                techImages={[reactIcon,typeScriptIcon, cssIcon]}
                 openModal={() =>
-                  openModal("Generador de Contraseñas", "Generador de contraseñas aleatorias realizado con Reflex. La página no guarda las contraseñas en ningun tipo de base de datos, con lo que la contraseña elegida por el usuario está segura. Permite elegir un numero de caracteres para la longitud de la contraseña. La web funciona en todos los dispositivos.", passGen, [
+                  openModal("Generador de Contraseñas", `${descriptions.passGenDesc}`, passGen, [
                     pythonIcon,
                     reflexIcon,
                     cssIcon,

@@ -13,7 +13,8 @@ export const webLinks = {
     yellowJackWeb : 'https://yellowjack-jddev.netlify.app',
     yellowJackCalc : 'https://calculadora-yellow-jddev.netlify.app',
     prevPortfolio : 'https://jddev-portfolio.netlify.app',
-    linkedIn : "https://www.linkedin.com/in/jdmorenopulido/"
+    linkedIn : "https://www.linkedin.com/in/jdmorenopulido/",
+    passGenWeb : "https://passgen-jddev.netlify.app"
 };
 
 
@@ -22,7 +23,7 @@ export const descriptions = {
     
     yellowjackCalcDesc : "Aplicación web de una calculadora para bares, en este caso, para el bar ficticio Yellow Jack. Fué un proyecto personal debido a que, en un juego de rol, usabamos el sistema de google sheets, que hacia lento el proceso de calcular los precios. De esta forma, la web a parte de cargar más rapido, era mas sencilla de usar y totalmente responsive",
 
-    passGenDesc : "Generador de contraseñas aleatorias realizado con Reflex. La página no guarda las contraseñas en ningun tipo de base de datos, con lo que la contraseña elegida por el usuario está segura. Permite elegir un numero de caracteres para la longitud de la contraseña. La web funciona en todos los dispositivos. DISCLAIMER: Debido a problemas con el hosting, la web se encuentra inoperativa actualmente. Sera realizada de nuevo en React con un diseño nuevo.",
+    passGenDesc : "Generador de contraseñas aleatorias realizado con React, TypeScript y CSS3. La página no guarda las contraseñas en ningun tipo de base de datos, con lo que la contraseña elegida por el usuario está segura. Permite elegir un numero de caracteres para la longitud de la contraseña y si quiere simbolos o no. La web funciona en todos los dispositivos.",
 
     mycDesc : "Generador de anotaciones de combos para juegos de lucha variados. Despues de elegir el juego deseado, al hacer click sobre los inputs, irás generando una lista de los mismos. Una vez hayas terminado, pulsa el boton 'Download Combo' para descargar un PNG con tus anotaciones. Perfecto si eres creador de contenido. DISCLAIMER: Debido a problemas con el hosting, la web se encuentra inoperativa actualmente. Sera realizada de nuevo en React con un diseño nuevo.",
 
