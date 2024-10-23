@@ -21,8 +21,8 @@ export const descriptions = {
     mycDesc: "Generador de anotaciones de combos para juegos de lucha variados. Despues de elegir el juego deseado, al hacer click sobre los inputs, irás generando una lista de los mismos. Una vez hayas terminado, pulsa el boton 'Download Combo' para descargar un PNG con tus anotaciones. Perfecto si eres creador de contenido. DISCLAIMER: Debido a problemas con el hosting, la web se encuentra inoperativa actualmente. Sera realizada de nuevo en React con un diseño nuevo.",
     diceAppDesc: "Aplicación creada en Flutter para dispositivos Android. La aplicación permite tirar un dado de seis caras de forma aleatoria. Si necesitas jugartela a suertes en alguna situación con tus amigos, esta aplicación te vendrá como anillo al dedo."
 };
-export const spCvUrl = "../../public/CV_Jose_Diego_Moreno_2024[Spanish].pdf";
-export const enCvUrl = "../../public/CV_Jose_Diego_Moreno_2024[English].pdf";
+export const spCvUrl = "/CV_Jose_Diego_Moreno_2024[Spanish].pdf";
+export const enCvUrl = "/CV_Jose_Diego_Moreno_2024[English].pdf";
 export const mail = "https://mail.google.com/mail/?view=cm&fs=1&to=jdmorenopulido@gmail.com";
 // job texts
 export const jobDescriptions = {
