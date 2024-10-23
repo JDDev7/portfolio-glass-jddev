@@ -32,8 +32,8 @@ export const descriptions = {
 };
 
 
-export const spCvUrl = "../assets/CV_Jose_Diego_Moreno_2024[Spanish].pdf";
-export const enCvUrl = "../assets/CV_Jose_Diego_Moreno_2024[English].pdf";
+export const spCvUrl = "../../public/CV_Jose_Diego_Moreno_2024[Spanish].pdf";
+export const enCvUrl = "../../public/CV_Jose_Diego_Moreno_2024[English].pdf";
 export const mail = "https://mail.google.com/mail/?view=cm&fs=1&to=jdmorenopulido@gmail.com"
 
 // job texts
