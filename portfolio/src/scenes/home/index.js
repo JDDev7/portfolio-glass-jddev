@@ -6,7 +6,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import Modal from "@/components/Modal";
 import CvModal from "@/components/CvModal";
 import { githubLinks, webLinks, descriptions } from "@/shared/constants";
-import { avatarBig, avatarSmall, githubIcon, linkedInIcon, reactIcon, dartIcon, flutterIcon, htmlicon, cssIcon, javaScriptIcon, typeScriptIcon, pythonIcon, reflexIcon, gitIcon, yellowJackWeb, passGen, makeYourCombo, calculadoraBar, diceApp, } from "@/shared/assets";
+import { avatarBig, avatarSmall, githubIcon, linkedInIcon, reactIcon, dartIcon, flutterIcon, htmlicon, cssIcon, javaScriptIcon, typeScriptIcon, pythonIcon, reflexIcon, gitIcon, yellowJackWeb, passGen, weatherApp, calculadoraBar, diceApp, nextjsIcon, tailwindIcon, } from "@/shared/assets";
 import ProjectCard from "@/components/ProjectCard";
 import GithubCard from "@/components/GithubCard";
 const Home = ({ setSelectedPage }) => {
@@ -42,10 +42,10 @@ const Home = ({ setSelectedPage }) => {
                                                 pythonIcon,
                                                 reflexIcon,
                                                 cssIcon,
-                                            ]) }), _jsx(ProjectCard, { image: makeYourCombo, title: "Combo Maker", github: githubLinks.githubMyC, techImages: [pythonIcon, reflexIcon, cssIcon], openModal: () => openModal("Fighting Game Combo Maker", `${descriptions.mycDesc}`, makeYourCombo, [
-                                                pythonIcon,
-                                                reflexIcon,
-                                                cssIcon,
+                                            ]) }), _jsx(ProjectCard, { image: weatherApp, title: "NextJS Weather APP", github: githubLinks.githubWeather, directLink: webLinks.weatherWeb, techImages: [nextjsIcon, typeScriptIcon, tailwindIcon], openModal: () => openModal("NextJS Weather APP", `${descriptions.webAppDesc}`, weatherApp, [
+                                                nextjsIcon,
+                                                typeScriptIcon,
+                                                tailwindIcon,
                                             ]) }), _jsx(ProjectCard, { image: diceApp, title: "Dice App", github: githubLinks.githubDiceApp, techImages: [dartIcon, flutterIcon], openModal: () => openModal("Dice App", `${descriptions.diceAppDesc}`, diceApp, [
                                                 dartIcon,
                                                 flutterIcon,

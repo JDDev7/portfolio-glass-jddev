@@ -22,9 +22,11 @@ import {
   gitIcon,
   yellowJackWeb,
   passGen,
-  makeYourCombo,
+  weatherApp,
   calculadoraBar,
   diceApp,
+  nextjsIcon,
+  tailwindIcon,
 } from "@/shared/assets";
 import ProjectCard from "@/components/ProjectCard";
 import GithubCard from "@/components/GithubCard";
@@ -179,15 +181,16 @@ const Home = ({ setSelectedPage }: Props) => {
                 }
               ></ProjectCard>
               <ProjectCard
-                image={makeYourCombo}
-                title="Combo Maker"
-                github={githubLinks.githubMyC}
-                techImages={[pythonIcon, reflexIcon, cssIcon]}
+                image={weatherApp}
+                title="NextJS Weather APP"
+                github={githubLinks.githubWeather}
+                directLink={webLinks.weatherWeb}
+                techImages={[nextjsIcon, typeScriptIcon, tailwindIcon]}
                 openModal={() =>
-                  openModal("Fighting Game Combo Maker", `${descriptions.mycDesc}`, makeYourCombo, [
-                    pythonIcon,
-                    reflexIcon,
-                    cssIcon,
+                  openModal("NextJS Weather APP", `${descriptions.webAppDesc}`, weatherApp, [
+                    nextjsIcon,
+                    typeScriptIcon,
+                    tailwindIcon,
                   ])
                 }
               ></ProjectCard>

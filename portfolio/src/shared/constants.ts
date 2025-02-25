@@ -6,6 +6,7 @@ export const githubLinks = {
     githubPrevPortfolio : 'https://github.com/JDDev7/jddev_portfolio',
     githubDiceApp : 'https://github.com/JDDev7/app_dados',
     gitHub : 'https://github.com/JDDev7',
+    githubWeather : 'https://github.com/JDDev7/next-js-weather-app'
 };
 
 
@@ -14,7 +15,8 @@ export const webLinks = {
     yellowJackCalc : 'https://calculadora-yellow-jddev.netlify.app',
     prevPortfolio : 'https://jddev-portfolio.netlify.app',
     linkedIn : "https://www.linkedin.com/in/jdmorenopulido/",
-    passGenWeb : "https://passgen-jddev.netlify.app"
+    passGenWeb : "https://passgen-jddev.netlify.app",
+    weatherWeb : "https://jdweather.vercel.app",
 };
 
 
@@ -27,7 +29,9 @@ export const descriptions = {
 
     mycDesc : "Generador de anotaciones de combos para juegos de lucha variados. Despues de elegir el juego deseado, al hacer click sobre los inputs, irás generando una lista de los mismos. Una vez hayas terminado, pulsa el boton 'Download Combo' para descargar un PNG con tus anotaciones. Perfecto si eres creador de contenido. DISCLAIMER: Debido a problemas con el hosting, la web se encuentra inoperativa actualmente. Sera realizada de nuevo en React con un diseño nuevo.",
 
-    diceAppDesc : "Aplicación creada en Flutter para dispositivos Android. La aplicación permite tirar un dado de seis caras de forma aleatoria. Si necesitas jugartela a suertes en alguna situación con tus amigos, esta aplicación te vendrá como anillo al dedo."
+    diceAppDesc : "Aplicación creada en Flutter para dispositivos Android. La aplicación permite tirar un dado de seis caras de forma aleatoria. Si necesitas jugartela a suertes en alguna situación con tus amigos, esta aplicación te vendrá como anillo al dedo.",
+
+    webAppDesc : "Aplicación web creada con NextJs 14. Usando la API de OpenWeather, se puede obtener la información de la temperatura, el tiempo y la humedad de las ciudades de España. La aplicación es totalmente responsive y funciona en todos los dispositivos."
 
 };
 
