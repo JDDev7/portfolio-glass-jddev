@@ -6,7 +6,7 @@ export const githubLinks = {
     githubPrevPortfolio : 'https://github.com/JDDev7/jddev_portfolio',
     githubDiceApp : 'https://github.com/JDDev7/app_dados',
     gitHub : 'https://github.com/JDDev7',
-    githubWeather : 'https://github.com/JDDev7/next-js-weather-app'
+    gihubWeather : 'https://github.com/JDDev7/next-js-weather-app'
 };
 
 
@@ -16,7 +16,7 @@ export const webLinks = {
     prevPortfolio : 'https://jddev-portfolio.netlify.app',
     linkedIn : "https://www.linkedin.com/in/jdmorenopulido/",
     passGenWeb : "https://passgen-jddev.netlify.app",
-    weatherWeb : "https://jdweather.vercel.app",
+    weatherWeb : "https://jdweather.vercel.app"
 };
 
 
@@ -31,7 +31,7 @@ export const descriptions = {
 
     diceAppDesc : "Aplicación creada en Flutter para dispositivos Android. La aplicación permite tirar un dado de seis caras de forma aleatoria. Si necesitas jugartela a suertes en alguna situación con tus amigos, esta aplicación te vendrá como anillo al dedo.",
 
-    webAppDesc : "Aplicación web creada con NextJs 14. Usando la API de OpenWeather, se puede obtener la información de la temperatura, el tiempo y la humedad de las ciudades de España. La aplicación es totalmente responsive y funciona en todos los dispositivos."
+    weatherDesc : "Aplicación web creada con NextJs 14. Usando la API de OpenWeather, se puede obtener la información de la temperatura, el tiempo y la humedad de las ciudades de España. La aplicación es totalmente responsive y funciona en todos los dispositivos.",
 
 };
 

@@ -12,6 +12,8 @@ import {
   linkedInIcon,
   reactIcon,
   dartIcon,
+  nextjsIcon,
+  tailwindIcon,
   flutterIcon,
   htmlicon,
   cssIcon,
@@ -22,11 +24,11 @@ import {
   gitIcon,
   yellowJackWeb,
   passGen,
-  weatherApp,
+
   calculadoraBar,
   diceApp,
-  nextjsIcon,
-  tailwindIcon,
+  weatherApp,
+
 } from "@/shared/assets";
 import ProjectCard from "@/components/ProjectCard";
 import GithubCard from "@/components/GithubCard";
@@ -130,6 +132,9 @@ const Home = ({ setSelectedPage }: Props) => {
               <img src={dartIcon} alt="dart" />
               <img src={flutterIcon} alt="flutter" />
               <img src={gitIcon} alt="git" />
+              <img src={nextjsIcon} alt="nextjs" />
+              <img src={tailwindIcon} alt="tailwind" />
+              
             </div>
           </div>
           <div className="projects-container glass">
@@ -174,23 +179,22 @@ const Home = ({ setSelectedPage }: Props) => {
                 techImages={[reactIcon,typeScriptIcon, cssIcon]}
                 openModal={() =>
                   openModal("Generador de Contraseñas", `${descriptions.passGenDesc}`, passGen, [
-                    pythonIcon,
-                    reflexIcon,
+                    reactIcon,
+                    typeScriptIcon,
                     cssIcon,
                   ])
                 }
               ></ProjectCard>
               <ProjectCard
                 image={weatherApp}
-                title="NextJS Weather APP"
-                github={githubLinks.githubWeather}
-                directLink={webLinks.weatherWeb}
-                techImages={[nextjsIcon, typeScriptIcon, tailwindIcon]}
+                title="Web App Clima"
+                github={githubLinks.githubMyC}
+                techImages={[nextjsIcon, tailwindIcon, typeScriptIcon]}
                 openModal={() =>
-                  openModal("NextJS Weather APP", `${descriptions.webAppDesc}`, weatherApp, [
+                  openModal("Web App Clima", `${descriptions.weatherDesc}`, weatherApp, [
                     nextjsIcon,
-                    typeScriptIcon,
                     tailwindIcon,
+                    typeScriptIcon,
                   ])
                 }
               ></ProjectCard>
