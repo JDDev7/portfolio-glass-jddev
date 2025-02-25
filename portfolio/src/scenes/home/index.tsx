@@ -188,7 +188,8 @@ const Home = ({ setSelectedPage }: Props) => {
               <ProjectCard
                 image={weatherApp}
                 title="Web App Clima"
-                github={githubLinks.githubMyC}
+                github={githubLinks.gihubWeather}
+                directLink={webLinks.weatherWeb}
                 techImages={[nextjsIcon, tailwindIcon, typeScriptIcon]}
                 openModal={() =>
                   openModal("Web App Clima", `${descriptions.weatherDesc}`, weatherApp, [

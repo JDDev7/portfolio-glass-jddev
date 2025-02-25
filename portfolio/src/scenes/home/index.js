@@ -42,7 +42,7 @@ const Home = ({ setSelectedPage }) => {
                                                 reactIcon,
                                                 typeScriptIcon,
                                                 cssIcon,
-                                            ]) }), _jsx(ProjectCard, { image: weatherApp, title: "Web App Clima", github: githubLinks.githubMyC, techImages: [nextjsIcon, tailwindIcon, typeScriptIcon], openModal: () => openModal("Web App Clima", `${descriptions.weatherDesc}`, weatherApp, [
+                                            ]) }), _jsx(ProjectCard, { image: weatherApp, title: "Web App Clima", github: githubLinks.gihubWeather, directLink: webLinks.weatherWeb, techImages: [nextjsIcon, tailwindIcon, typeScriptIcon], openModal: () => openModal("Web App Clima", `${descriptions.weatherDesc}`, weatherApp, [
                                                 nextjsIcon,
                                                 tailwindIcon,
                                                 typeScriptIcon,
