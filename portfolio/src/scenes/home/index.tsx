@@ -12,6 +12,8 @@ import {
   linkedInIcon,
   reactIcon,
   dartIcon,
+  nextjsIcon,
+  tailwindIcon,
   flutterIcon,
   htmlicon,
   cssIcon,
@@ -22,9 +24,11 @@ import {
   gitIcon,
   yellowJackWeb,
   passGen,
-  makeYourCombo,
+
   calculadoraBar,
   diceApp,
+  weatherApp,
+
 } from "@/shared/assets";
 import ProjectCard from "@/components/ProjectCard";
 import GithubCard from "@/components/GithubCard";
@@ -128,6 +132,9 @@ const Home = ({ setSelectedPage }: Props) => {
               <img src={dartIcon} alt="dart" />
               <img src={flutterIcon} alt="flutter" />
               <img src={gitIcon} alt="git" />
+              <img src={nextjsIcon} alt="nextjs" />
+              <img src={tailwindIcon} alt="tailwind" />
+              
             </div>
           </div>
           <div className="projects-container glass">
@@ -172,22 +179,22 @@ const Home = ({ setSelectedPage }: Props) => {
                 techImages={[reactIcon,typeScriptIcon, cssIcon]}
                 openModal={() =>
                   openModal("Generador de Contraseñas", `${descriptions.passGenDesc}`, passGen, [
-                    pythonIcon,
-                    reflexIcon,
+                    reactIcon,
+                    typeScriptIcon,
                     cssIcon,
                   ])
                 }
               ></ProjectCard>
               <ProjectCard
-                image={makeYourCombo}
-                title="Combo Maker"
+                image={weatherApp}
+                title="Web App Clima"
                 github={githubLinks.githubMyC}
-                techImages={[pythonIcon, reflexIcon, cssIcon]}
+                techImages={[nextjsIcon, tailwindIcon, typeScriptIcon]}
                 openModal={() =>
-                  openModal("Fighting Game Combo Maker", `${descriptions.mycDesc}`, makeYourCombo, [
-                    pythonIcon,
-                    reflexIcon,
-                    cssIcon,
+                  openModal("Web App Clima", `${descriptions.weatherDesc}`, weatherApp, [
+                    nextjsIcon,
+                    tailwindIcon,
+                    typeScriptIcon,
                   ])
                 }
               ></ProjectCard>
