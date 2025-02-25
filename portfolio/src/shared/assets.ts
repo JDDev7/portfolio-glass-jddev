@@ -16,6 +16,8 @@ import javaScriptIcon from '@/assets/javascript.webp';
 import typeScriptIcon from '@/assets/typescript.webp';
 import pythonIcon from '@/assets/python.webp';
 import reflexIcon from '@/assets/reflex.webp';
+import nextjsIcon from '@/assets/nextjs.webp';
+import tailwindIcon from '@/assets/tailwind.webp'
 import gitIcon from '@/assets/git-brands-solid.svg';
 import yellowJackWeb from '@/assets/yellowjack_web.webp'
 import passGen from '@/assets/passgen_web.webp'
@@ -24,6 +26,7 @@ import calculadoraBar from '@/assets/calculadora_bar.webp'
 import diceApp from '@/assets/diceapp.webp'
 import gitHub from '@/assets/github.svg'
 import siteLink from '@/assets/link-solid.svg'
+import weatherApp from '@/assets/weatherapp_web.webp'
 
 export {
   // Avatares
@@ -45,6 +48,8 @@ export {
   pythonIcon,
   reflexIcon,
   gitIcon,
+  nextjsIcon,
+  tailwindIcon,
   
   // Proyectos
   yellowJackWeb
@@ -52,6 +57,7 @@ export {
   ,makeYourCombo
   ,calculadoraBar
   ,diceApp
+  ,weatherApp
 
   // Link icons
   ,gitHub
