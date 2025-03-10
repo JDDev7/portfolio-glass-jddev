@@ -24,8 +24,8 @@ export const descriptions = {
     diceAppDesc: "Aplicación creada en Flutter para dispositivos Android. La aplicación permite tirar un dado de seis caras de forma aleatoria. Si necesitas jugartela a suertes en alguna situación con tus amigos, esta aplicación te vendrá como anillo al dedo.",
     weatherDesc: "Aplicación web creada con NextJs 14. Usando la API de OpenWeather, se puede obtener la información de la temperatura, el tiempo y la humedad de las ciudades de España. La aplicación es totalmente responsive y funciona en todos los dispositivos.",
 };
-export const spCvUrl = "/CV_Jose_Diego_Moreno_2024[Spanish].pdf";
-export const enCvUrl = "/CV_Jose_Diego_Moreno_2024[English].pdf";
+export const spCvUrl = "/CV_Jose_Diego_Moreno_2025[Spanish].pdf";
+export const enCvUrl = "/CV_Jose_Diego_Moreno_2025[English].pdf";
 export const mail = "https://mail.google.com/mail/?view=cm&fs=1&to=jdmorenopulido@gmail.com";
 // job texts
 export const jobDescriptions = {
