@@ -5,7 +5,7 @@ const CvModal = ({ isOpen, closeCvModal }) => {
         return null; // No renderizar el modal si no está abierto
     const handleDownload = (cvLanguage) => {
         const url = cvLanguage === 'Español' ? spCvUrl : enCvUrl;
-        const fileName = cvLanguage === 'Español' ? 'CV_Jose_Diego_Moreno_2024[Spanish].pdf' : 'CV_Jose_Diego_Moreno_2024[English].pdf';
+        const fileName = cvLanguage === 'Español' ? 'CV_Jose_Diego_Moreno_2025[Spanish].pdf' : 'CV_Jose_Diego_Moreno_2025[English].pdf';
         const link = document.createElement('a');
         link.href = url;
         link.download = fileName;
